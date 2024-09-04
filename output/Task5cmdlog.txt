@@ -1,0 +1,323 @@
+runfile('F:/Prodigy_Projects/Task5/Task_05_DataScience.py', wdir='F:/Prodigy_Projects/Task5')
+          ID   Source  ...  Nautical_Twilight Astronomical_Twilight
+0  A-6573882  Source1  ...              Night                 Night
+1  A-6573883  Source1  ...              Night                 Night
+2  A-6573884  Source1  ...              Night                 Night
+3  A-6573885  Source1  ...                Day                   Day
+4  A-6573886  Source1  ...                Day                   Day
+
+[5 rows x 46 columns]
+Index(['ID', 'Source', 'Severity', 'Start_Time', 'End_Time', 'Start_Lat',
+       'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Description',
+       'Street', 'City', 'County', 'State', 'Zipcode', 'Country', 'Timezone',
+       'Airport_Code', 'Weather_Timestamp', 'Temperature(F)', 'Wind_Chill(F)',
+       'Humidity(%)', 'Pressure(in)', 'Visibility(mi)', 'Wind_Direction',
+       'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Amenity',
+       'Bump', 'Crossing', 'Give_Way', 'Junction', 'No_Exit', 'Railway',
+       'Roundabout', 'Station', 'Stop', 'Traffic_Calming', 'Traffic_Signal',
+       'Turning_Loop', 'Sunrise_Sunset', 'Civil_Twilight', 'Nautical_Twilight',
+       'Astronomical_Twilight'],
+      dtype='object')
+object     20
+bool       13
+float64    12
+int64       1
+Name: count, dtype: int64
+(1202759, 46)
+           Severity     Start_Lat  ...  Wind_Speed(mph)  Precipitation(in)
+count  1.202759e+06  1.202759e+06  ...     1.115487e+06      904620.000000
+mean   2.219149e+00  3.700250e+01  ...     7.437327e+00           0.007010
+std    6.009684e-01  5.161971e+00  ...     5.610606e+00           0.096662
+min    1.000000e+00  2.457022e+01  ...     0.000000e+00           0.000000
+25%    2.000000e+00  3.387629e+01  ...     3.500000e+00           0.000000
+50%    2.000000e+00  3.742251e+01  ...     7.000000e+00           0.000000
+75%    2.000000e+00  4.073410e+01  ...     1.000000e+01           0.000000
+max    4.000000e+00  4.900056e+01  ...     9.840000e+02          24.000000
+
+[8 rows x 13 columns]
+<bound method Series.unique of 0          MD
+1          CA
+2          MD
+3          MD
+4          MD
+           ..
+1202754    CA
+1202755    CA
+1202756    CA
+1202757    CA
+1202758    CA
+Name: State, Length: 1202759, dtype: object>
+                ID   Source  ...  Astronomical_Twilight      IDD
+1        A-6573883  Source1  ...                  Night  6573883
+6        A-6573888  Source1  ...                    Day  6573888
+8        A-6573890  Source1  ...                    Day  6573890
+19       A-6573901  Source1  ...                    Day  6573901
+21       A-6573903  Source1  ...                    Day  6573903
+           ...      ...  ...                    ...      ...
+1202754  A-7777757  Source1  ...                    Day  7777757
+1202755  A-7777758  Source1  ...                    Day  7777758
+1202756  A-7777759  Source1  ...                    Day  7777759
+1202757  A-7777760  Source1  ...                    Day  7777760
+1202758  A-7777761  Source1  ...                    Day  7777761
+
+[367318 rows x 47 columns]
+           ID   Source  ...  Astronomical_Twilight      IDD
+1   A-6573883  Source1  ...                  Night  6573883
+6   A-6573888  Source1  ...                    Day  6573888
+8   A-6573890  Source1  ...                    Day  6573890
+19  A-6573901  Source1  ...                    Day  6573901
+21  A-6573903  Source1  ...                    Day  6573903
+
+[5 rows x 47 columns]
+(367318, 47)
+Index(['ID', 'Source', 'Severity', 'Start_Time', 'End_Time', 'Start_Lat',
+       'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Description',
+       'Street', 'City', 'County', 'State', 'Zipcode', 'Country', 'Timezone',
+       'Airport_Code', 'Weather_Timestamp', 'Temperature(F)', 'Wind_Chill(F)',
+       'Humidity(%)', 'Pressure(in)', 'Visibility(mi)', 'Wind_Direction',
+       'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Amenity',
+       'Bump', 'Crossing', 'Give_Way', 'Junction', 'No_Exit', 'Railway',
+       'Roundabout', 'Station', 'Stop', 'Traffic_Calming', 'Traffic_Signal',
+       'Turning_Loop', 'Sunrise_Sunset', 'Civil_Twilight', 'Nautical_Twilight',
+       'Astronomical_Twilight', 'IDD'],
+      dtype='object')
+0
+(280175, 47)
+ID                       0.000000
+Source                   0.000000
+Severity                 0.000000
+Start_Time               0.000000
+End_Time                 0.000000
+Start_Lat                0.000000
+Start_Lng                0.000000
+End_Lat                  0.000000
+End_Lng                  0.000000
+Distance(mi)             0.000000
+Description              0.000000
+Street                   0.033907
+City                     0.001428
+County                   0.000000
+State                    0.000000
+Zipcode                  0.000000
+Country                  0.000000
+Timezone                 0.000000
+Airport_Code             0.000000
+Weather_Timestamp        0.000000
+Temperature(F)           1.220309
+Wind_Chill(F)            3.010618
+Humidity(%)              1.348443
+Pressure(in)             0.309093
+Visibility(mi)           0.466851
+Wind_Direction           1.238155
+Wind_Speed(mph)          1.394843
+Precipitation(in)        0.000000
+Weather_Condition        0.500402
+Amenity                  0.000000
+Bump                     0.000000
+Crossing                 0.000000
+Give_Way                 0.000000
+Junction                 0.000000
+No_Exit                  0.000000
+Railway                  0.000000
+Roundabout               0.000000
+Station                  0.000000
+Stop                     0.000000
+Traffic_Calming          0.000000
+Traffic_Signal           0.000000
+Turning_Loop             0.000000
+Sunrise_Sunset           0.005354
+Civil_Twilight           0.005354
+Nautical_Twilight        0.005354
+Astronomical_Twilight    0.005354
+IDD                      0.000000
+dtype: float64
+ID                       0.000000
+Source                   0.000000
+Severity                 0.000000
+Start_Time               0.000000
+End_Time                 0.000000
+Start_Lat                0.000000
+Start_Lng                0.000000
+End_Lat                  0.000000
+End_Lng                  0.000000
+Distance(mi)             0.000000
+Description              0.000000
+Street                   0.033909
+City                     0.000000
+County                   0.000000
+State                    0.000000
+Zipcode                  0.000000
+Country                  0.000000
+Timezone                 0.000000
+Airport_Code             0.000000
+Weather_Timestamp        0.000000
+Temperature(F)           1.220374
+Wind_Chill(F)            3.010780
+Humidity(%)              1.348515
+Pressure(in)             0.309109
+Visibility(mi)           0.466876
+Wind_Direction           1.238221
+Wind_Speed(mph)          1.394917
+Precipitation(in)        0.000000
+Weather_Condition        0.500428
+Amenity                  0.000000
+Bump                     0.000000
+Crossing                 0.000000
+Give_Way                 0.000000
+Junction                 0.000000
+No_Exit                  0.000000
+Railway                  0.000000
+Roundabout               0.000000
+Station                  0.000000
+Stop                     0.000000
+Traffic_Calming          0.000000
+Traffic_Signal           0.000000
+Turning_Loop             0.000000
+Sunrise_Sunset           0.000000
+Civil_Twilight           0.000000
+Nautical_Twilight        0.000000
+Astronomical_Twilight    0.000000
+IDD                      0.000000
+dtype: float64
+Weather_Condition
+Fair                            162843
+Cloudy                           31076
+Mostly Cloudy                    24002
+Partly Cloudy                    23517
+Light Rain                       11105
+Haze                              8463
+Fog                               4830
+Rain                              3876
+Fair / Windy                      2013
+Heavy Rain                        1710
+Smoke                             1684
+Overcast                           701
+Partly Cloudy / Windy              454
+Light Snow                         397
+Mostly Cloudy / Windy              322
+Cloudy / Windy                     186
+Snow                               178
+Light Rain / Windy                 126
+Drizzle                            106
+Light Drizzle                       94
+Patches of Fog                      85
+T-Storm                             84
+Mist                                81
+Heavy Snow                          80
+Scattered Clouds                    75
+Shallow Fog                         72
+Clear                               69
+Thunder in the Vicinity             61
+Blowing Dust                        55
+Blowing Dust / Windy                55
+Rain / Windy                        43
+Heavy T-Storm                       43
+Haze / Windy                        41
+Light Rain with Thunder             39
+Heavy Rain / Windy                  34
+Thunder                             18
+N/A Precipitation                   17
+Showers in the Vicinity             17
+Fog / Windy                         15
+Thunderstorms and Rain              15
+Wintry Mix                          12
+Light Rain Shower                   11
+Light Snow / Windy                  10
+Light Thunderstorms and Rain         7
+Heavy Drizzle                        7
+Squalls / Windy                      6
+Heavy Thunderstorms and Rain         5
+Smoke / Windy                        4
+Snow / Windy                         4
+Light Freezing Rain                  3
+Heavy Rain Shower                    2
+Partial Fog                          1
+Drizzle / Windy                      1
+Hail                                 1
+Rain Shower                          1
+Light Rain Showers                   1
+Name: count, dtype: int64
+                  feature  count_of_unique_values
+0                      ID                  280160
+1                  Source                       1
+2              Start_Time                  196312
+3                End_Time                  235018
+4             Description                   77147
+5                  Street                   16313
+6                    City                     985
+7                  County                      58
+8                   State                       1
+9                 Zipcode                   24478
+10                Country                       1
+11               Timezone                       2
+12           Airport_Code                     124
+13      Weather_Timestamp                   73505
+14         Wind_Direction                      25
+15      Weather_Condition                      57
+16         Sunrise_Sunset                       2
+17         Civil_Twilight                       2
+18      Nautical_Twilight                       2
+19  Astronomical_Twilight                       2
+Index(['Severity', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng',
+       'Distance(mi)', 'Temperature(F)', 'Wind_Chill(F)', 'Humidity(%)',
+       'Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)',
+       'Precipitation(in)', 'IDD'],
+      dtype='object')
+14
+Index(['ID', 'Source', 'Start_Time', 'End_Time', 'Description', 'Street',
+       'City', 'County', 'State', 'Zipcode', 'Country', 'Timezone',
+       'Airport_Code', 'Weather_Timestamp', 'Wind_Direction',
+       'Weather_Condition', 'Sunrise_Sunset', 'Civil_Twilight',
+       'Nautical_Twilight', 'Astronomical_Twilight'],
+      dtype='object')
+10074
+              feature  count_of_unique_values
+0            Severity                       4
+1           Start_Lat                   97068
+2           Start_Lng                   98966
+3             End_Lat                   97104
+4             End_Lng                   98904
+5        Distance(mi)                    4436
+6      Temperature(F)                     169
+7       Wind_Chill(F)                     181
+8         Humidity(%)                     101
+9        Pressure(in)                     764
+10     Visibility(mi)                      36
+11    Wind_Speed(mph)                      65
+12  Precipitation(in)                      66
+13                IDD                  280160
+985
+City
+Los Angeles       26571
+San Diego          9138
+Sacramento         6680
+Riverside          5709
+Bakersfield        5034
+ 
+West Hollywood        1
+Travis AFB            1
+Tres Pinos            1
+Woodacre              1
+Canyon Lake           1
+Name: count, Length: 985, dtype: int64
+City
+Los Angeles       26571
+San Diego          9138
+Sacramento         6680
+Riverside          5709
+Bakersfield        5034
+San Bernardino     4829
+Anaheim            4383
+Oakland            4183
+Fresno             4109
+Ontario            4095
+Name: count, dtype: int64
+Severity
+1      4653
+2    265935
+3      6202
+4      3370
+Name: ID, dtype: int64
+object
+object
+datetime64
